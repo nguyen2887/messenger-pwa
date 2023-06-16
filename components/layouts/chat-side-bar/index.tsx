@@ -7,7 +7,7 @@ import { TopBar } from "./top-bar";
 
 export const ChatSideBar: React.FC<JSX.IntrinsicElements["div"]> = ({ className, ...props }) => {
   return (
-    <div className={cn("w-96 border-r p-2", className)} {...props}>
+    <div className={cn("w-96 border-r py-2 px-4", className)} {...props}>
       <TopBar />
 
       <SearchBar />

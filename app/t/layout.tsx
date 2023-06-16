@@ -6,7 +6,7 @@ export default function ChatLayout({ children }: { children: React.ReactNode }) 
     <>
       <ChatSideBar />
 
-      <div className="flex-1">{children}</div>
+      <div className="flex-1 flex items-center justify-center bg-slate-100">{children}</div>
     </>
   );
 }
