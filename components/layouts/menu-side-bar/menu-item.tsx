@@ -24,11 +24,11 @@ export const MenuItem: React.FC<MenuItemProps> = ({ icon, link, title }) => {
     <Link
       href={link}
       className={cn(
-        "flex items-center gap-2 p-2 rounded-md hover:bg-slate-100 transition-all",
-        isActive && "bg-slate-100",
+        "flex items-center gap-2 p-2 rounded-md hover:bg-gray-100 transition-all",
+        isActive && "bg-gray-100",
       )}
     >
-      {icon}
+      <div className={cn(!isActive && "[&_svg]:fill-gray-500")}>{icon}</div>
 
       <div className="text-sm font-medium">{title}</div>
     </Link>

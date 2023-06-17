@@ -20,5 +20,5 @@ export const TopBar = () => {
 };
 
 const ButtonIcon = ({ ...props }: JSX.IntrinsicElements["div"]) => (
-  <div className="bg-slate-100 hover:bg-slate-200 rounded-3xl p-1 cursor-pointer transition-all" {...props} />
+  <div className="bg-gray-100 hover:bg-gray-200 rounded-3xl p-1 cursor-pointer transition-all" {...props} />
 );
